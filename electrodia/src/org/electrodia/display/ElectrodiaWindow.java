@@ -325,6 +325,7 @@ public class ElectrodiaWindow extends JFrame {
 			putValue(SHORT_DESCRIPTION, "Closes the Electrodia Window");
 		}
 		public void actionPerformed(ActionEvent e) {
+			System.exit(0);
 		}
 	}
 	

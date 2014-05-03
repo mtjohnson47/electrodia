@@ -20,7 +20,7 @@ import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
 public class ElectrodiaWindow extends JFrame {
-	private static final long serialVersionUID = 3L;
+	private static final long serialVersionUID = -503690353640854094L;
 	private JMenuBar menuBar;
 	private JMenu mnFile;
 	private JMenuItem mntmNew;
@@ -249,7 +249,7 @@ public class ElectrodiaWindow extends JFrame {
 	}
 	
 	private class NewButtonClicked extends AbstractAction {
-		private static final long serialVersionUID = 1L;
+		private static final long serialVersionUID = -746312531100860753L;
 		public NewButtonClicked() {
 			putValue(NAME, "New...");
 			putValue(SHORT_DESCRIPTION, "Creates a new project");
@@ -259,7 +259,7 @@ public class ElectrodiaWindow extends JFrame {
 	}
 	
 	private class OpenButtonClicked extends AbstractAction {
-		private static final long serialVersionUID = 1L;
+		private static final long serialVersionUID = -6798926723010005720L;
 		public OpenButtonClicked() {
 			putValue(NAME, "Open...");
 			putValue(SHORT_DESCRIPTION, "Opens an existing project");
@@ -269,7 +269,7 @@ public class ElectrodiaWindow extends JFrame {
 	}
 	
 	private class SaveButtonClicked extends AbstractAction {
-		private static final long serialVersionUID = 1L;
+		private static final long serialVersionUID = 8094610876858722005L;
 		public SaveButtonClicked() {
 			putValue(NAME, "Save");
 			putValue(SHORT_DESCRIPTION, "Saves the project to disk.");
@@ -279,7 +279,7 @@ public class ElectrodiaWindow extends JFrame {
 	}
 	
 	private class SaveAsButtonClicked extends AbstractAction {
-		private static final long serialVersionUID = 1L;
+		private static final long serialVersionUID = -7009158512936797676L;
 		public SaveAsButtonClicked() {
 			putValue(NAME, "Save as...");
 			putValue(SHORT_DESCRIPTION, "Creates a duplicate project and saves changes to it.");
@@ -289,7 +289,7 @@ public class ElectrodiaWindow extends JFrame {
 	}
 	
 	private class CloseCurrentButtonClicked extends AbstractAction {
-		private static final long serialVersionUID = 1L;
+		private static final long serialVersionUID = 7167442570809583749L;
 		public CloseCurrentButtonClicked() {
 			putValue(NAME, "Close current");
 			putValue(SHORT_DESCRIPTION, "Closes the current project, but leaves all others open.");
@@ -299,7 +299,7 @@ public class ElectrodiaWindow extends JFrame {
 	}
 	
 	private class CloseAllButtonClicked extends AbstractAction {
-		private static final long serialVersionUID = 1L;
+		private static final long serialVersionUID = 4683604427709065264L;
 		public CloseAllButtonClicked() {
 			putValue(NAME, "Close all");
 			putValue(SHORT_DESCRIPTION, "Closes all projects.");
@@ -309,7 +309,7 @@ public class ElectrodiaWindow extends JFrame {
 	}
 	
 	private class CloseAllButCurrentButtonClicked extends AbstractAction {
-		private static final long serialVersionUID = 1L;
+		private static final long serialVersionUID = 4301385583799170225L;
 		public CloseAllButCurrentButtonClicked() {
 			putValue(NAME, "Close all but current");
 			putValue(SHORT_DESCRIPTION, "Closes all projects, but leaves the current one open.");
@@ -319,7 +319,7 @@ public class ElectrodiaWindow extends JFrame {
 	}
 	
 	private class ExitApplicationButtonClicked extends AbstractAction {
-		private static final long serialVersionUID = 1L;
+		private static final long serialVersionUID = 3999863673144179990L;
 		public ExitApplicationButtonClicked() {
 			putValue(NAME, "Exit Application");
 			putValue(SHORT_DESCRIPTION, "Closes the Electrodia Window");
@@ -330,7 +330,7 @@ public class ElectrodiaWindow extends JFrame {
 	}
 	
 	private class CopyButtonClicked extends AbstractAction {
-		private static final long serialVersionUID = 1L;
+		private static final long serialVersionUID = 1449331182226185725L;
 		public CopyButtonClicked() {
 			putValue(NAME, "Copy");
 			putValue(SHORT_DESCRIPTION, "Copies whatever is currently selected");
@@ -340,7 +340,7 @@ public class ElectrodiaWindow extends JFrame {
 	}
 	
 	private class CutButtonClicked extends AbstractAction {
-		private static final long serialVersionUID = 1L;
+		private static final long serialVersionUID = -548744099341187777L;
 		public CutButtonClicked() {
 			putValue(NAME, "Cut");
 			putValue(SHORT_DESCRIPTION, "Copies whatever is currently selected, and then removes it");
@@ -350,7 +350,7 @@ public class ElectrodiaWindow extends JFrame {
 	}
 	
 	private class PasteButtonClicked extends AbstractAction {
-		private static final long serialVersionUID = 1L;
+		private static final long serialVersionUID = 2832545337175274285L;
 		public PasteButtonClicked() {
 			putValue(NAME, "Paste");
 			putValue(SHORT_DESCRIPTION, "Pastes the contents of the clipboard into project");
@@ -360,7 +360,7 @@ public class ElectrodiaWindow extends JFrame {
 	}
 	
 	private class PreferencesButtonClicked extends AbstractAction {
-		private static final long serialVersionUID = 1L;
+		private static final long serialVersionUID = -1770111224385839664L;
 		public PreferencesButtonClicked() {
 			putValue(NAME, "Preferences...");
 			putValue(SHORT_DESCRIPTION, "Opens the global preferences dialog");
@@ -370,7 +370,7 @@ public class ElectrodiaWindow extends JFrame {
 	}
 	
 	private class HelpButtonClicked extends AbstractAction {
-		private static final long serialVersionUID = 1L;
+		private static final long serialVersionUID = 8214386750424749133L;
 		public HelpButtonClicked() {
 			putValue(NAME, "Contents");
 			putValue(SHORT_DESCRIPTION, "Opens the help window");
@@ -380,12 +380,13 @@ public class ElectrodiaWindow extends JFrame {
 	}
 	
 	private class AboutButtonClicked extends AbstractAction {
-		private static final long serialVersionUID = 1L;
+		private static final long serialVersionUID = -1467259098055395447L;
 		public AboutButtonClicked() {
 			putValue(NAME, "About");
 			putValue(SHORT_DESCRIPTION, "Opens a window with Electrodia version information");
 		}
 		public void actionPerformed(ActionEvent e) {
+			new AboutWindow();
 		}
 	}
 }

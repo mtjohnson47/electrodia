@@ -228,7 +228,7 @@ public class ElectrodiaWindow extends JFrame {
 		splitPane_1.setRightComponent(rightTabbedPane);
 		
 		containers = new JPanel();
-		rightTabbedPane.addTab("ContainerReference", null, containers, null);
+		rightTabbedPane.addTab("Container Reference", null, containers, null);
 		
 		leftTabbedPane = new JTabbedPane(JTabbedPane.TOP);
 		leftTabbedPane.setTabLayoutPolicy(JTabbedPane.SCROLL_TAB_LAYOUT);

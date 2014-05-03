@@ -20,7 +20,7 @@ import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
 public class ElectrodiaWindow extends JFrame {
-	private static final long serialVersionUID = 2L;
+	private static final long serialVersionUID = 3L;
 	private JMenuBar menuBar;
 	private JMenu mnFile;
 	private JMenuItem mntmNew;

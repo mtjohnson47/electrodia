@@ -386,7 +386,9 @@ public class ElectrodiaWindow extends JFrame {
 			putValue(SHORT_DESCRIPTION, "Opens a window with Electrodia version information");
 		}
 		public void actionPerformed(ActionEvent e) {
-			new AboutWindow();
+			AboutWindow wind = new AboutWindow();
+			wind.setBounds(getWidth() / 2 - wind.getWidth() / 2 + getBounds().x, getHeight() / 2 - wind.getHeight() / 2 + getBounds().y, wind.getWidth(), wind.getHeight());
+			wind.setVisible(true);
 		}
 	}
 }

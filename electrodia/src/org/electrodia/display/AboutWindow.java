@@ -1,22 +1,23 @@
 package org.electrodia.display;
 
 import java.awt.BorderLayout;
+import java.awt.Dialog;
 import java.awt.Dimension;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
 import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
-import javax.swing.JFrame;
+import javax.swing.JDialog;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextPane;
 import javax.swing.ScrollPaneConstants;
 
 import org.electrodia.display.controls.ImagePanel;
-import java.awt.event.ComponentAdapter;
-import java.awt.event.ComponentEvent;
 
-public class AboutWindow extends JFrame {
+public class AboutWindow extends JDialog {
 	private static final long serialVersionUID = -8109121960503382359L;
 	private ImagePanel imgPane;
 
@@ -27,6 +28,7 @@ public class AboutWindow extends JFrame {
 				resize();
 			}
 		});
+		this.setModalityType(Dialog.ModalityType.APPLICATION_MODAL);
 		
 		JPanel contentPane = new JPanel();
 		getContentPane().add(contentPane, BorderLayout.CENTER);
@@ -64,7 +66,6 @@ public class AboutWindow extends JFrame {
 			
 		}
 		
-		setVisible(true);
 		setSize(450,300);
 	}
 	

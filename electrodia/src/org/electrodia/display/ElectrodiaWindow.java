@@ -4,6 +4,8 @@ import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
+import java.io.File;
+import java.io.IOException;
 
 import javax.swing.AbstractAction;
 import javax.swing.Action;
@@ -376,6 +378,15 @@ public class ElectrodiaWindow extends JFrame {
 			putValue(SHORT_DESCRIPTION, "Opens the help window");
 		}
 		public void actionPerformed(ActionEvent e) {
+			try {
+				new ProcessBuilder(System.getProperty("java.home") +
+				        File.separator + "bin" +
+				        File.separator + "java", 
+				        "-cp", System.getProperty("java.class.path"), 
+				        org.electrodia.help.ElectrodiaHelpMain.class.getCanonicalName()).start();
+			} catch (IOException e1) {
+				System.out.println("Unable to open help window");
+			}
 		}
 	}
 	
